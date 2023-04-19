@@ -7,6 +7,8 @@
 		<script type="text/javascript" src="js/basic_test.js" defer></script>
 		<script type="text/javascript" src="js/data_type.js" defer></script>
 		<script type="text/javascript" src="js/pop_up.js" defer></script>
+		<script type="text/javascript" src="js/hover.js" defer></script>
+		<script type="text/javascript" src="js/array_test.js" defer></script>
 		<title>구글 메인화면 예제</title>
 		<meta name=“viewport” content="width=device-width, initial-scale=1"> 
 		<meta charset="utf-8"> 
@@ -63,13 +65,15 @@
 		<br><!br=줄바꿈>
 		<hr><!hr은 밑줄치기>
 		<!p style="text-align:center;"//더미 주석>
-			<div class="mx-auto" style="width: 500px">
-			<a href="index.html" target="_blank"><img src="img/googlelogo_color_big.png" class="img-fluid"alt="구글 이미지"></a>
+		<div class="mx-auto" style="width: 500px">
+			<a href="index.html" target="_blank">
+				<img src="img/googlelogo_color_big.png" class="img-fluid"alt="구글 이미지" onmouseover="over(this)" onmouseout="out(this)">
+			</a>
 		</div>
 		<!/p//더미주석>
 		<!img 태그는 이미지 삽입.src=경로, 이미지 깨지면 alt 출력>
 		<br>
-		<form action="https://www.google.co.kr/search" method="GET" target="_blank">
+		<form id="form_main" action="https://www.google.co.kr/search" method="GET" target="_blank" onsubmit="return false">
             <div class="d-flex justify-content-center">
                 <mx-auto>
                     <input name="query" type="text" class="form-control-lg" placeholder="검색어 입력" aria-label="search" aria-describedby="search_btn" id="search_txt">
