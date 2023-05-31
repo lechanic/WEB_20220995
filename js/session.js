@@ -72,6 +72,7 @@ function session_join_get()
 	//console.log(sessionStorage.getItem("Session_Storage_encrypted").contactInfo);//미완
 	if (sessionStorage) 
 	{
+		console.log(sessionStorage.getItem("Session_Storage_encryted"));
 		return sessionStorage.getItem("Session_Storage_encrypted");
     } 
 	else 

@@ -62,6 +62,10 @@ function join()
         form.submit();
     }
 }
+function get_join_session()
+{
+	session_join_get();
+}
 function addJavascript(jsname) 
 { // 자바스크립트 외부 연동
 	var th = document.getElementsByTagName('head')[0];
